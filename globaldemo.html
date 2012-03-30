@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+	<title>Superfishによるナビゲーションデモ</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="http://d.hatena.ne.jp/T_Tachibana/files/navistyle.css?d=y" media="screen">
+	<script type="text/javascript" src="http://d.hatena.ne.jp/T_Tachibana/files/jquery-1.2.6.min.js?d=y"></script>
+	<script type="text/javascript" src="http://d.hatena.ne.jp/T_Tachibana/files/hoverIntent.js?d=y"></script>
+	<script type="text/javascript" src="http://d.hatena.ne.jp/T_Tachibana/files/superfish.js?d=y"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){ 
+        $("ul.sf-menu").superfish({ 
+            animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation  
+            dropShadows: false                            // disable drop shadows 
+        }); 
+	});
+
+	</script>
+</head>
+<body>
+
+<ul id="suckerfishnav" class="sf-menu">
+	<li><a href="http://d.hatena.ne.jp/T_Tachibana">top</a>
+	<ul>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page1</a></li>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page2</a></li>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page3</a>
+		<ul>
+			<li><a href="http://d.hatena.ne.jp/T_Tachibana">page3-1</a></li>
+			<li><a href="http://d.hatena.ne.jp/T_Tachibana">page3-2</a></li>
+			<li><a href="http://d.hatena.ne.jp/T_Tachibana">page3-3</a></li>
+		</ul>
+		</li>		
+	</ul>
+	</li>
+	<li><a href="http://d.hatena.ne.jp/T_Tachibana">works</a>
+	<ul>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page-a</a></li>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page-b</a></li>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">page-c</a></li>
+	</ul>
+	</li>
+	<li><a href="http://d.hatena.ne.jp/T_Tachibana">contact</a></li>
+	<li><a href="http://d.hatena.ne.jp/T_Tachibana">link</a></li>
+	<li><a href="http://d.hatena.ne.jp/T_Tachibana">blog</a>
+	<ul>
+		<li><a href="http://d.hatena.ne.jp/T_Tachibana">category</a></li>
+	</ul>
+	</li>
+</ul>
+
+</body>
+</html>

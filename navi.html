@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<title>A very basic Superfish menu example</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="navistyle.css" media="screen">
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){ 
+        $("ul.sf-menu").superfish({ 
+            animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation  
+            dropShadows: false                            // disable drop shadows 
+        }); 
+	});
+
+	</script>
+</head>
+<body>
+
+
+<ul id="suckerfishnav" class="sf-menu">
+	<li>
+	<a href="http://left-bank.info/">Index</a>
+	</li>
+	<li>
+	<a href="http://left-bank.info/home/">Top</a>
+		<ul>
+			<li>
+			<a href="http://left-bank.info/home/about_me/">About Me</a>
+			</li>
+			<li>
+			<a href="http://left-bank.info/home/contact/">Contact</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+	<a href="http://left-bank.info/fanfic/">Fan Fiction</a>
+	</li>
+	<li>
+	<a href="http://left-bank.info/diary/">Diary</a>
+		<ul>
+			<li>
+			<a href="http://left-bank.info/category/notebook/">雑記</a>
+			</li>
+			<li>
+			<a href="http://left-bank.info/category/no_class/">未分類</a>
+			</li>
+
+		</ul>
+	</li>
+	<li>
+	<a href="http://left-bank.info/link/">Link</a>
+	</li>
+	<li>
+	<a href="http://left-bank.info/clap/clap.cgi">Clap</a>
+	</li>
+</ul>
+</body>
+</html>
